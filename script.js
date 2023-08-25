@@ -28,7 +28,7 @@ searchBtn.addEventListener("click",()=> {
     }
 }); 
 function getUrl(cityName){
-    return `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${key}`
+    return `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${key}`
 }
 async function get(url){
     let response = await fetch(url); 
