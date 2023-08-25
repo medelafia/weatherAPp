@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.form input {
+    width: 100%;
+}
+.form span {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.form span hr {
+    width: 100%;
+}
+.form span p {
+    position: absolute;
+    background-color: white;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+@media (max-width:600px) {
+    .discription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .currentWeather {
+        text-align: center;
+    }
+}
